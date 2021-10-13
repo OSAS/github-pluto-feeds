@@ -1,0 +1,8 @@
+---
+name: "Fetch Pluto Feeds"
+description: " Fetch feeds using pluto and store the database as artifacts"
+inputs: {}
+outputs: {}
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
