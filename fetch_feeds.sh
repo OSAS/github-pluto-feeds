@@ -1,5 +1,6 @@
 #!/bin/sh
 set -e
 
-bundle exec pluto -c planet.ini update
+cd /srv/pluto/
+bundle exec pluto -c $GITHUB_WORKSPACE/planet.ini -d $GITHUB_WORKSPACE/planet.db update
 
