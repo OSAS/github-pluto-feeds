@@ -2,5 +2,6 @@
 set -e
 
 cd /srv/pluto/
-bundle exec pluto -c $GITHUB_WORKSPACE/planet.ini update -d $GITHUB_WORKSPACE/planet.db
+ln -s $GITHUB_WORKSPACE/planet.ini
+bundle exec pluto update -d $GITHUB_WORKSPACE/
 
